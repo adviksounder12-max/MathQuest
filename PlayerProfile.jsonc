@@ -1,0 +1,72 @@
+{
+  "name": "PlayerProfile",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number",
+      "default": 1
+    },
+    "xp": {
+      "type": "number",
+      "default": 0
+    },
+    "coins": {
+      "type": "number",
+      "default": 0
+    },
+    "streak": {
+      "type": "number",
+      "default": 0
+    },
+    "longest_streak": {
+      "type": "number",
+      "default": 0
+    },
+    "last_active": {
+      "type": "string"
+    },
+    "lessons_completed": {
+      "type": "number",
+      "default": 0
+    },
+    "courses_completed": {
+      "type": "number",
+      "default": 0
+    },
+    "games_won": {
+      "type": "number",
+      "default": 0
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "completed_courses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "best_scores": {
+      "type": "object"
+    },
+    "is_demo": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "username"
+  ]
+}
