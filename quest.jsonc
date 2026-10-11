@@ -1,0 +1,49 @@
+{
+  "name": "Quest",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "lessons",
+        "xp",
+        "games"
+      ]
+    },
+    "target": {
+      "type": "number"
+    },
+    "progress": {
+      "type": "number",
+      "default": 0
+    },
+    "xp_reward": {
+      "type": "number",
+      "default": 0
+    },
+    "reward_coins": {
+      "type": "number",
+      "default": 0
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "user_id",
+    "title"
+  ]
+}
