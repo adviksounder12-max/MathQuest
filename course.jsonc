@@ -1,0 +1,56 @@
+{
+  "name": "Course",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "world": {
+      "type": "string"
+    },
+    "emoji": {
+      "type": "string"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced",
+        "Expert"
+      ]
+    },
+    "xp_reward": {
+      "type": "number"
+    },
+    "lesson_count": {
+      "type": "number"
+    },
+    "order": {
+      "type": "number"
+    },
+    "gradient": {
+      "type": "string",
+      "enum": [
+        "purple",
+        "blue",
+        "pink",
+        "cyan"
+      ]
+    }
+  },
+  "required": [
+    "slug",
+    "title",
+    "world"
+  ]
+}
